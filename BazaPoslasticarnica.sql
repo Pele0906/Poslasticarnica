@@ -1,6 +1,7 @@
 USE [master]
 GO
 
+
 /****** Object:  Database [Poslasticarnica]    Script Date: 5/30/2020 7:18:20 PM ******/
 CREATE DATABASE [Poslasticarnica]
  CONTAINMENT = NONE
