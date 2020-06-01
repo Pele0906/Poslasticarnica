@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GlavnaStranica.master.cs" Inherits="PrezentacioniSloj.GlavnaStranica" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 1152px;
+            height: 190px;
+            margin-right: 0px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div>
+            <img alt="" class="auto-style1" src="Slike/slika1.jpg"/>
+            <br />
+            <asp:Menu ID="MeniPoslasticarnice" runat="server" Orientation="Horizontal" OnMenuItemClick="MeniPoslasticarnice_Click" >
+                <Items>
+                    <asp:MenuItem Text="POCETNA" Value="~/MeniPocetna.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="POSLASTICE" Value="~/MeniPoslastice.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="RECEPTI" Value="~/MeniRecepti.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="O NAMA" Value="~/MeniONama.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="KONTAKT" Value="~/MeniKontakt.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="REGISTRACIJA" Value="Registracija.aspx"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#660066" ForeColor="#3366FF" />
+                <StaticMenuItemStyle BackColor="#D45C7C" Font-Bold="True" Font-Italic="True" Font-Size="Large" Font-Strikeout="False" ForeColor="White" HorizontalPadding="50px" VerticalPadding="10px" />
+            </asp:Menu>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="Stranica" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
