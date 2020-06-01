@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GlavnaStranica.master.cs" Inherits="PrezentacioniSloj.GlavnaStranica" %>
-
 <!DOCTYPE html>
 
 <html>
