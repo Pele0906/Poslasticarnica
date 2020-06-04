@@ -35,7 +35,7 @@ namespace PrezentacioniSloj
         protected void btPretrazi_Click(object sender, EventArgs e)
         {
             Baza baza = new Baza();
-            string stringPretrage = btPretrazi.Text;
+            string stringPretrage = tbPretraga.Text;
 
             List<Poslastice> lista = baza.DajSvePoslasticePremaVrsti(stringPretrage);
 
